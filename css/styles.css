@@ -38,7 +38,7 @@ opacity: .8;}
 
 ol {padding-left: 20px;}
 
-ol li {padding: 5px;color:#000;}
+ol li {padding: 5px;color:#000; user-select: none;}
 
 ol li:nth-child(even){background: #dfdfdf;}
 
@@ -48,14 +48,16 @@ li:hover{
   cursor: pointer;
  }
 
-.delete {
-	display: none;
-}
-
-li > crossOutButton {
+li > button {
 	background: none;
 	border: none;
 	float: right;
 	color: #025f70;
 	font-weight: 800;
+    outline: none;
 }
+
+li > button:hover {
+    cursor: pointer;
+}
+
